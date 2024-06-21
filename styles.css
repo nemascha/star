@@ -1,0 +1,157 @@
+:root {
+    --main-font-family: normal, Raleway, Lato, sans-serif;
+    --primary-color: #43ABF0;
+}
+
+.color-primary {
+	color: var(--primary-color);
+}
+
+.main {
+	display: flex;
+	background-color: #000000;
+}
+
+.container {
+	width: 100%;
+}
+
+.main-img {
+	display: flex;
+	object-fit: contain;
+	width: 100%;
+}
+
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	height: 100px;
+	width: 100%;
+	background: #10101D;
+	opacity: 0.9;
+}
+
+.header-logo {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+.logo {
+	text-transform: uppercase;
+	color: #FFFFFF;
+	font-family: var(--main-font-family);
+}
+
+.logo-net {
+	text-transform: uppercase;
+	color: var(--primary-color);
+	font-family: var(--main-font-family);
+}
+
+.menu {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+.list-item {
+	display: inline-block;
+	font-family: var(--main-font-family);
+	padding: 0 10px;
+}
+
+.list-item_link {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.list-item_link:hover {
+	color: var(--primary-color);
+}
+
+.main-content {
+	background-image: url('images/main.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 15% 0 0 15%;
+}
+
+.container-header {
+	text-transform: uppercase;
+	font-family: var(--main-font-family);
+	font-size: 48px;
+	font-weight: 700;
+}
+
+.list-head {
+	font-family: var(--main-font-family);
+}
+
+.main-list {
+	font-family: var(--main-font-family);
+	font-weight: 400;
+	font-size: 20px;
+	margin: 5% 0;
+}
+
+.main-list ul li {
+	list-style-type:"– ";
+}
+
+.main-btn {
+	margin-bottom: 5%;
+	display: grid;
+    grid-template-columns: repeat(2, 200px);
+}
+
+.btn {
+	font-family: var(--main-font-family);
+	color: #2A2B30;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 13px;
+	border: 1px solid #6F6D7B;
+	border-radius: 4px;
+	padding: 10px 15px 10px 15px;
+	margin-right: 10px;
+}
+
+.btn:hover {
+	background-color: var(--primary-color);
+	border: 1px solid white;
+	color: white;
+}
+
+.booking {
+	display: flex;
+	justify-content: center;
+    flex-direction: column;
+    align-items: center;
+	background-color: #272733;
+	background-image: url(images/map.png);
+	padding: 3% 0;
+}
+
+.booking-header {
+	font-family: var(--main-font-family);
+	text-transform: uppercase;
+	color: #FFFFFF;
+	font-weight: 800;
+	font-size: 36px;
+}
+
+.booking-note {
+	color: #BBBBBB;
+	font-family: var(--main-font-family);
+	font-size: 18px;
+	font-weight: 400;
+}
