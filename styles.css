@@ -1,7 +1,55 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 :root {
     --main-font-family: normal, Raleway, Lato, sans-serif;
     --primary-color: #43ABF0;
 }
+
+html {
+    font-size: 16px;
+  }
 
 .color-primary {
 	color: var(--primary-color);
@@ -23,7 +71,7 @@
 }
 
 .header{
-	position: fixed;
+	position: sticky;
 	top: 0;
 	left: 0;
 	display: grid;
@@ -67,7 +115,7 @@
 .list-item_link {
 	text-decoration: none;
 	color: #FFFFFF;
-	font-size: 13px;
+	font-size: 0.8rem;
 	font-weight: 600;
 }
 
@@ -81,15 +129,15 @@
 	background-repeat: no-repeat;
 	display: flex;
 	flex-direction: column;
-	width: 100%;
-	padding: 15% 0 0 15%;
+	padding: 15% 0 15% 15%;
 }
 
 .container-header {
 	text-transform: uppercase;
 	font-family: var(--main-font-family);
-	font-size: 48px;
+	font-size: 3rem;
 	font-weight: 700;
+	width: 60%;
 }
 
 .list-head {
@@ -99,7 +147,7 @@
 .main-list {
 	font-family: var(--main-font-family);
 	font-weight: 400;
-	font-size: 20px;
+	font-size: 1.25rem;
 	margin: 5% 0;
 }
 
@@ -118,7 +166,7 @@
 	color: #2A2B30;
 	text-transform: uppercase;
 	font-weight: 400;
-	font-size: 13px;
+	font-size: 0.8rem;
 	border: 1px solid #6F6D7B;
 	border-radius: 4px;
 	padding: 10px 15px 10px 15px;
@@ -139,6 +187,8 @@
 	background-color: #272733;
 	background-image: url(images/map.png);
 	padding: 3% 0;
+	background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .booking-header {
@@ -146,12 +196,35 @@
 	text-transform: uppercase;
 	color: #FFFFFF;
 	font-weight: 800;
-	font-size: 36px;
+	font-size: 2.25rem;
 }
 
 .booking-note {
 	color: #BBBBBB;
 	font-family: var(--main-font-family);
-	font-size: 18px;
+	font-size: 1.125rem;
 	font-weight: 400;
+	padding: 5% 0;
+}
+
+.scheme {
+	margin: 5% 0;
+}
+
+.icon-container {
+	display: block;
+	background-color: var(--primary-color);
+	border: 5px solid #286690;
+	border-radius: 50%;
+	padding: 1em;
+}
+
+.fa-solid {
+	color: #FFFFFF;
+	font-size: 2em;
+}
+
+.fa-regular {
+	color: #FFFFFF;
+	font-size: 2em;
 }
