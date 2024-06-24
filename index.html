@@ -42,16 +42,76 @@
                 <p class="booking-header">Оформление <span class="color-primary">Заказа</span></p>
                 <p class="booking-note">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
                 <div class="scheme">
-                    <span class="icon-container"><i class="fa-solid fa-magnifying-glass"></i></span>
-                    <span class="icon-container"><i class="fa-solid fa-percent"></i></span>
-                    <span class="icon-container"><i class="fa-solid fa-file-circle-plus"></i></span>
-                    <span class="icon-container"><i class="fa-regular fa-envelope"></i></span>
-                    <span class="icon-container"><i class="fa-regular fa-money-bill-1"></i></span>
+                    <div class="icon-container">
+                        <div class="scheme-item">
+                            <span class="icon-content">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>  
+                        <p class="scheme-description">Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                    <div class="icon-container">
+                        <div class="scheme-item">
+                            <span class="icon-content">
+                                <i class="fa-solid fa-percent"></i>
+                            </span>
+                            <p class="scheme-description">Сonsecteturadipiscing elit</p>
+                        </div>
+                    </div>
+                    <div class="icon-container">
+                        <div class="scheme-item">
+                            <span class="icon-content">
+                                <i class="fa-solid fa-file-circle-plus"></i>
+                            </span>
+                            <p class="scheme-description">Sed do eiusmod tempor</p>
+                        </div>
+                    </div>
+                    <div class="icon-container">
+                        <div class="scheme-item">
+                            <span class="icon-content">
+                                <i class="fa-regular fa-envelope"></i>
+                            </span>
+                            <p class="scheme-description">Esse cillum dolore eu fugiat</p>
+                        </div>
+                    </div>
+                    <div class="icon-container">
+                        <div class="scheme-item">
+                            <span class="icon-content">
+                                <i class="fa-regular fa-money-bill-1"></i>
+                            </span>
+                            <p class="scheme-description">Excepteur sint occaecat cupidatat non proident</p>s
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <form class="main-form" oninput="result.value=parseInt(slider.value)">
+                        <input id="system-name" class="input" type="text" name="system-name" placeholder="Выберите тип системы">
+                        <input id="system-name" class="input" type="text" name="system-name" placeholder="Ваш e-mail">
+                        <input id="system-name" class="input" type="text" name="system-name" placeholder="Ваше имя">
+                        <label for="range" class="slider-label">Sed ut perspiciatis, unde omnis iste natus 
+                            <output name="result">75</output>
+                            <span>%</span>
+                        <input id="range" class="slider" type="range" name="slider" min="1" max="100" value="75" step="1">
+                        </label>
+                        <input id="file-upload" class="file-input" type="file" accept=".jpg, .jpeg, .png, .gif, .bmp, .doc, .docx, .xls, .xlsx, .txt, .tar, .zip, .7z, .7zip">
+                        <div class="submit-btn"><button type="submit" class="btn">Отправить</button></div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
     <div class="footer">
-        
+        <div class="footer-container">
+            <span>© 2018 «LoremIpsum.net» Все права защищены.</span>
+        </div>
+        <div class="footer-container">
+            <span>Qiwi wallet</span>
+            <span>Yandex Money</span>
+            <span>Web Money</span>
+        </div>
+        <div class="footer-container">
+            <span>info@ipsum228.com</span>
+            <span>Мы вконтакте</span>
+        </div>
     </div>
 </body>
