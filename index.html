@@ -45,7 +45,7 @@
                     <div class="icon-container">
                         <div class="scheme-item">
                             <span class="icon-content">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-magnifying-glass icon-light"></i>
                         </span>  
                         <p class="scheme-description">Lorem ipsum dolor sit amet</p>
                         </div>
@@ -53,7 +53,7 @@
                     <div class="icon-container">
                         <div class="scheme-item">
                             <span class="icon-content">
-                                <i class="fa-solid fa-percent"></i>
+                                <i class="fa-solid fa-percent icon-light"></i>
                             </span>
                             <p class="scheme-description">Сonsecteturadipiscing elit</p>
                         </div>
@@ -61,7 +61,7 @@
                     <div class="icon-container">
                         <div class="scheme-item">
                             <span class="icon-content">
-                                <i class="fa-solid fa-file-circle-plus"></i>
+                                <i class="fa-solid fa-file-circle-plus icon-light"></i>
                             </span>
                             <p class="scheme-description">Sed do eiusmod tempor</p>
                         </div>
@@ -69,7 +69,7 @@
                     <div class="icon-container">
                         <div class="scheme-item">
                             <span class="icon-content">
-                                <i class="fa-regular fa-envelope"></i>
+                                <i class="fa-regular fa-envelope icon-light"></i>
                             </span>
                             <p class="scheme-description">Esse cillum dolore eu fugiat</p>
                         </div>
@@ -77,35 +77,36 @@
                     <div class="icon-container">
                         <div class="scheme-item">
                             <span class="icon-content">
-                                <i class="fa-regular fa-money-bill-1"></i>
+                                <i class="fa-regular fa-money-bill-1 icon-light"></i>
                             </span>
-                            <p class="scheme-description">Excepteur sint occaecat cupidatat non proident</p>s
+                            <p class="scheme-description">Excepteur sint occaecat cupidatat non proident</p>
                         </div>
                     </div>
                 </div>
                 <div>
                     <form class="main-form" oninput="result.value=parseInt(slider.value)">
-                        <div>
+                        <div class="main-form_container">
                             <input id="system-name" class="input" type="text" name="system-name" placeholder="Выберите тип системы">
                         </div>
-                        <div>
-                            <input id="system-name" class="input" type="text" name="system-name" placeholder="Ваш e-mail">
+                        <div class="main-form_container">
+                            <input id="email" class="input" type="text" name="email" placeholder="Ваш e-mail">
                         </div>
-                        <div>
-                            <input id="system-name" class="input" type="text" name="system-name" placeholder="Ваше имя">
+                        <div class="main-form_container">
+                            <input id="userName" class="input" type="text" name="userName" placeholder="Ваше имя">
                         </div>
-                        <div>
+                        <div class="main-form_container">
                             <label for="range" class="slider-label">Sed ut perspiciatis, unde omnis iste natus 
                                 <output name="result">75</output>
                                 <span>%</span>
                             <input id="range" class="slider" type="range" name="slider" min="1" max="100" value="75" step="1">
                             </label>
                         </div>
-                        <div>
-                            <input id="file-upload" class="file-input" type="file" accept=".jpg, .jpeg, .png, .gif, .bmp, .doc, .docx, .xls, .xlsx, .txt, .tar, .zip, .7z, .7zip">
+                        <div class="main-form_container">
+                            <label for="fileUpload" class="btn file-upload_label"><i class="fa-regular fa-file-lines"></i><span>Прикрепить файл</span></label>
+                            <input id="fileUpload" class="file-upload" type="file" name="fileUpload" accept=".jpg, .jpeg, .png, .gif, .bmp, .doc, .docx, .xls, .xlsx, .txt, .tar, .zip, .7z, .7zip">
                         </div>
-                        <div class="submit-btn"><button type="submit" class="btn">Отправить</button></div>
                     </form>
+                    <div class="submit-btn"><button type="submit" class="btn">Отправить</button></div>
                 </div>
             </div>
         </div>
@@ -115,13 +116,30 @@
             <span>© 2018 «LoremIpsum.net» Все права защищены.</span>
         </div>
         <div class="footer-container">
-            <span>Qiwi wallet</span>
-            <span>Yandex Money</span>
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256">
+                    <g fill="#3e9cdc" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M23.5,0c-12.407,0 -22.5,10.093 -22.5,22.5c0,12.407 10.093,22.5 22.5,22.5c2.595,0 4.43559,-0.29564 6.05859,-0.55664c1.418,-0.228 2.75641,-0.44336 4.44141,-0.44336c8.165,0 13.19905,5.60316 13.24805,5.66016c0.196,0.222 0.47295,0.33789 0.75195,0.33789c0.186,0 0.37406,-0.0502 0.53906,-0.1582c0.416,-0.267 0.57405,-0.79705 0.37305,-1.24805c-0.11,-0.248 -2.82675,-6.10791 -13.71875,-8.62891l-0.29687,-0.08203c-2.692,-0.666 -4.86598,-1.75061 -6.45898,-3.22461c-2.058,-1.902 -2.45113,-3.82198 -2.45312,-3.83398c-0.092,-0.509 -0.56822,-0.86136 -1.07422,-0.81836c-0.516,0.047 -0.91016,0.47809 -0.91016,0.99609c0,0.102 0.00652,2.09075 0.35352,3.96875c-0.298,0.021 -0.58052,0.03125 -0.85352,0.03125c-7.995,0 -14.5,-6.505 -14.5,-14.5c0,-7.995 6.505,-14.5 14.5,-14.5c7.995,0 14.5,6.505 14.5,14.5c0,0.596 -0.03728,1.19883 -0.11328,1.79883c-1.886,-0.298 -3.76172,-0.29883 -3.88672,-0.29883c-0.582,0 -1,0.49953 -1,1.01953c0.012,0.543 0.45505,0.97947 0.99805,0.98047c0.02,0 2.10089,0.0198 3.96289,1.2168c3.087,1.984 3.82603,4.97986 3.83203,5.00586c0.093,0.412 0.43547,0.71953 0.85547,0.76953c0.417,0.043 0.82567,-0.16983 1.01367,-0.54883c1.551,-3.135 2.33789,-6.48136 2.33789,-9.94336c0,-12.407 -10.093,-22.5 -22.5,-22.5zM38.63477,32.00195c-0.24506,-0.01495 -0.43602,0.09164 -0.54102,0.27539c-0.212,0.371 -0.05395,1.10609 0.37305,1.74609c0.433,0.648 0.7998,0.97656 1.0918,0.97656c0.268,0 0.53616,-0.33548 0.41016,-1.14648c-0.075,-0.484 -0.35727,-1.53592 -1.07227,-1.79492c-0.0925,-0.0335 -0.18003,-0.05166 -0.26172,-0.05664zM35.36719,35c-0.449,0 -0.82274,0.1168 -1.05273,0.3418c-0.59,0.578 -0.32487,1.5937 0.57813,2.2207c0.395,0.273 0.96253,0.4375 1.51953,0.4375c0.567,0 1.04098,-0.16956 1.33398,-0.47656c0.525,-0.56 0.22347,-1.35253 -0.76953,-2.01953c-0.492,-0.33 -1.06437,-0.50391 -1.60937,-0.50391z"></path></g></g>
+                    </svg>
+            QIWI wallet</span>
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256">
+                    <g fill="#3e9cdc" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M3,15.5v0.5v9.18c0,2.11 1.72,3.82 3.83,3.82h16.17c1.1,0 2,-0.89 2,-1.99v-14.1c0,-1.05 -0.86,-1.91 -1.92,-1.91h-4.08v-8v-1c0,-0.55 -0.45,-1 -1,-1h-1c-1,0 -1.26,-0.05 -2.01,0.7l-11.43,11.43c-0.42,0.42 -0.61,0.99 -0.54,1.54c-0.01,0.07 -0.02,0.15 -0.02,0.23zM13.65,9.35c0.75,-0.52 1.72,-0.43 2.16,0.21c0.44,0.64 0.19,1.58 -0.56,2.1c-0.76,0.52 -1.73,0.43 -2.17,-0.21c-0.44,-0.64 -0.18,-1.58 0.57,-2.1zM11.49,23.62l6.83,-6.02c0.43,-0.38 0.68,-0.93 0.68,-1.5v-1.1v-2h4v0.15v0.31v6.11c0,0.85 -0.55,1.62 -1.36,1.89l-6.34,2.31l-0.01,0.01l-0.92,0.33l-5.87,2.14z"></path></g></g>
+                    </svg>
+            Yandex Money</span>
+            
             <span>Web Money</span>
         </div>
         <div class="footer-container">
-            <span>info@ipsum228.com</span>
-            <span>Мы вконтакте</span>
+            <div>
+                <i class="fa-regular fa-envelope icon-primary"></i>
+                <span class="icon-email-footer">
+                info@ipsum228.com</span>
+            </div>
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 48 48">
+                    <path fill="#1976d2" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5 V37z"></path><path fill="#fff" d="M35.937,18.041c0.046-0.151,0.068-0.291,0.062-0.416C35.984,17.263,35.735,17,35.149,17h-2.618 c-0.661,0-0.966,0.4-1.144,0.801c0,0-1.632,3.359-3.513,5.574c-0.61,0.641-0.92,0.625-1.25,0.625C26.447,24,26,23.786,26,23.199 v-5.185C26,17.32,25.827,17,25.268,17h-4.649C20.212,17,20,17.32,20,17.641c0,0.667,0.898,0.827,1,2.696v3.623 C21,24.84,20.847,25,20.517,25c-0.89,0-2.642-3-3.815-6.932C16.448,17.294,16.194,17,15.533,17h-2.643 C12.127,17,12,17.374,12,17.774c0,0.721,0.6,4.619,3.875,9.101C18.25,30.125,21.379,32,24.149,32c1.678,0,1.85-0.427,1.85-1.094 v-2.972C26,27.133,26.183,27,26.717,27c0.381,0,1.158,0.25,2.658,2c1.73,2.018,2.044,3,3.036,3h2.618 c0.608,0,0.957-0.255,0.971-0.75c0.003-0.126-0.015-0.267-0.056-0.424c-0.194-0.576-1.084-1.984-2.194-3.326 c-0.615-0.743-1.222-1.479-1.501-1.879C32.062,25.36,31.991,25.176,32,25c0.009-0.185,0.105-0.361,0.249-0.607 C32.223,24.393,35.607,19.642,35.937,18.041z"></path>
+                    </svg>
+            Мы вконтакте</span>
         </div>
     </div>
 </body>
